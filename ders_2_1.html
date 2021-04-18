@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My Web Site"> <!--Meta etiketi web istemiz hakkında bilgi veriri ve seo için önemlidir.-->>
+    <meta name="author" content="Buse">
+    <meta name="keywords" content="Html, Css,JavaScript ..."> 
+    <meta charset="..." ><!--Bu etiket, sayfanın içerik türünü ve karakter kümesini tanımlar.--> 
+
+<meta http-equiv="refresh" content="...;url=..." /><!--Bu etikette belirlenen zaman bitiminden sonra kullanıcılar farklı bir URL’e yönlendirilir.--> 
+
+<meta name="viewport" content="..."> <!--Bu etiket, birlikte sayfanın mobil görünümünün nasıl olacağını bildirilir. Bu etiket, sayfanın mobil uyumlu olduğunu gösterir.-->
+<meta name="rating" content="adult" /> <!--Sayfanın yalnızca yetişkinlere uygun olduğunu göstermek için kullanılır.--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: crimson;
+            text-align: center;
+            text-decoration: darkkhaki;
+
+        }
+
+        table,
+        tr,
+        th {
+            border: 1px solid red;
+        }
+
+        table {
+            border-spacing: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+        .boxBorder{
+            border:3px solid blueviolet;
+            color: burlywood;
+            background-color: coral;
+        }
+        #denemeId{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello</p>
+    <p style="color: darkblue;">Naber</p>
+    <code>
+        <pre>
+        x=10;
+        y=5;
+        </pre>
+    </code>
+    <p>buna <kbd style="border: 1px solid red;">enter </kbd>tıkla</p>
+
+    <table>
+        <tr>
+            <th>
+                Ad
+            </th>
+            <th>
+                Soyad
+            </th>
+            <th>
+                Yaş
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Buse
+            </th>
+            <th>
+                Yalçın
+            </th>
+            <th>
+                22
+            </th>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>
+                Kullanıcı adı:
+            </th>
+            <th colspan="2">
+                <!--Burada 2 tane alan alacağını söylüyoruz.-->
+                Telefonlar:
+            </th>
+        </tr>
+        <tr>
+            <th>Bsse</th>
+            <th>5646566</th>
+            <th>5664699</th>
+        </tr>
+
+    </table>
+    <br>
+    <table>
+        <!--Caption tablo başlığı verir. Thead ve Tbody ön yüzde bir şey değiştirmez ama kod okunabilirliği için kullanabilirz.-->
+        <caption> <h4>SAYILAR DENEME</h4></caption> 
+    <thead>
+        <th>Deneme1</th>
+        <th>Deneme2</th>
+        <th>Deneme3</th>
+    </thead>
+    <tbody></tbody>
+        <tr>
+            <td>Sayı 1</td>
+            <td>Sayı 2</td>
+            <td>Sayı 3</td>
+        </tr>
+        <tr>
+            <td>Sayı 4</td>
+            <td>Sayı 5</td>
+            <td>Sayı 6</td>
+        </tr>
+    </tbody>
+    </table>
+    <a href="mailto:buseylcin55@gmail.com" target="_blank" title="Tıkla ve mail gönder"> E-POSTA GÖNDERMEK İÇİN TIKLA</a>
+<h1>LİSTELER</h1>
+    <ul>
+        <li>
+            <a href="#">Kahve</a>
+        </li>
+        <li>Çay</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li style="text-transform: uppercase;">
+            Kahve
+        </li>
+        <li>Çay</li>
+    </ul>
+    <ol>
+        <li>Ev <ol>Garajlı Ev</ol><ol>Garajsız Ev</ol></li> 
+
+        <li>Araba</li>
+        <li>Ofis</li>
+    </ol>
+    <ol type="I">
+        <li>Ev</li>
+        <li>Araba</li>
+    </ol>
+    <ol type="A">
+        <li>Ev</li>
+        <li>Araba</li>
+    </ol>
+    <dl>
+        <dt>Elma</dt>
+        <dd>- Elmalar kırmızıdır.</dd>
+        <dt>Portakal</dt>
+        <dd>- Portakallar turunucudur.</dd>
+    </dl>
+
+    <form action="ders_1.html">
+        
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="Adı" placeholder="Adını gir" required>
+        <br>
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="Soyadı" placeholder="Soyadını gir">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+        <label for="password">Şifre:</label>
+        <input type="password" id="pass" name="pass">
+        <br>
+        <textarea name="textares" id="ta" cols="30" rows="10" style="color: blueviolet;">
+            Hakkınızda bir şeyler yazınız
+        </textarea>
+        <br>
+        <label for="text">İngilizce Seviyeniz:</label>
+        <input type="range">
+        <br>
+        <label for="date">Doğum Tarihiniz: </label>
+        <input type="date">
+        <br>
+        <label for="ressim">Resim Seçiniz</label>
+        <input type="file">
+        <p>Cinsiyetiniz:</p>
+        <label for="kadın">Kadın</label>
+        <input type="radio" id="kadın" name="Cinsiyet" value="Kadın">
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="erkek" name="Cinsiyet" value="Erkek">
+        
+        <p>Hangi dersleri seviyorsunuz ?</p>
+        <input type="checkbox" id="ders1" value="Matematik">
+        <label for="ders1">Matematik</label>
+        <input type="checkbox" id="ders1" value="Fizik">
+        <label for="ders1">Fizik</label>
+        <input type="submit" value="Gönder">
+    </form>
+<h1>DERSLER:</h1>
+    <div style="border : 1px black;color: royalblue; background-color: silver;">
+        İlk Okul Dersleri:
+        <P>Matematik</P>
+        <p>Hayat Bilgisi</p>
+    </div>
+    <div style="border : 1px black;color: teal; background-color: tomato;">
+        Lise Dersleri:
+        <p>Fizik</p>
+        <p>Kimya</p>
+    </div>
+    <div class="boxBorder">
+        Üniversite Dersleri:
+        <p>Fizik</p>
+        <p>Kimya</p>
+    </div>
+    <br>
+    <div id="denemeId" class="boxBorder">
+        Açık Öğretim Dersleri:
+        <p>Fizik</p>
+        <p>Kimya</p>
+    </div>
+    <iframe width="800" height="700" src="http://polonyadaerasmus.cf/" title="Ders" frameborder="0" allow="accelerometer">SORRY...</iframe>
+</body>
+
+</html>
